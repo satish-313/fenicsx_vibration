@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+<!DOCTYPE Xdmf SYSTEM "Xdmf.dtd" []>
+<Xdmf Version="3.0" xmlns:xi="https://www.w3.org/2001/XInclude">
+  <Domain>
+    <Grid Name="mesh" GridType="Uniform">
+      <Topology TopologyType="Tetrahedron" NumberOfElements="70080" NodesPerElement="4">
+        <DataItem Dimensions="70080 4" NumberType="Int" Format="HDF">modes1.h5:/Mesh/mesh/topology</DataItem>
+      </Topology>
+      <Geometry GeometryType="XYZ">
+        <DataItem Dimensions="14024 3" Format="HDF">modes1.h5:/Mesh/mesh/geometry</DataItem>
+      </Geometry>
+    </Grid>
+    <Grid Name="Mode_1" GridType="Collection" CollectionType="Temporal">
+      <Grid Name="Mode_1" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="0" />
+        <Attribute Name="Mode_1" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="14024 3" Format="HDF">modes1.h5:/Function/Mode_1/0</DataItem>
+        </Attribute>
+      </Grid>
+    </Grid>
+    <Grid Name="Mode_2" GridType="Collection" CollectionType="Temporal">
+      <Grid Name="Mode_2" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="0" />
+        <Attribute Name="Mode_2" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="14024 3" Format="HDF">modes1.h5:/Function/Mode_2/0</DataItem>
+        </Attribute>
+      </Grid>
+    </Grid>
+    <Grid Name="Mode_3" GridType="Collection" CollectionType="Temporal">
+      <Grid Name="Mode_3" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="0" />
+        <Attribute Name="Mode_3" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="14024 3" Format="HDF">modes1.h5:/Function/Mode_3/0</DataItem>
+        </Attribute>
+      </Grid>
+    </Grid>
+    <Grid Name="Mode_4" GridType="Collection" CollectionType="Temporal">
+      <Grid Name="Mode_4" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="0" />
+        <Attribute Name="Mode_4" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="14024 3" Format="HDF">modes1.h5:/Function/Mode_4/0</DataItem>
+        </Attribute>
+      </Grid>
+    </Grid>
+    <Grid Name="Mode_5" GridType="Collection" CollectionType="Temporal">
+      <Grid Name="Mode_5" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="0" />
+        <Attribute Name="Mode_5" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="14024 3" Format="HDF">modes1.h5:/Function/Mode_5/0</DataItem>
+        </Attribute>
+      </Grid>
+    </Grid>
+    <Grid Name="Mode_6" GridType="Collection" CollectionType="Temporal">
+      <Grid Name="Mode_6" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="0" />
+        <Attribute Name="Mode_6" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="14024 3" Format="HDF">modes1.h5:/Function/Mode_6/0</DataItem>
+        </Attribute>
+      </Grid>
+    </Grid>
+    <Grid Name="Mode_7" GridType="Collection" CollectionType="Temporal">
+      <Grid Name="Mode_7" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="0" />
+        <Attribute Name="Mode_7" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="14024 3" Format="HDF">modes1.h5:/Function/Mode_7/0</DataItem>
+        </Attribute>
+      </Grid>
+    </Grid>
+    <Grid Name="Mode_8" GridType="Collection" CollectionType="Temporal">
+      <Grid Name="Mode_8" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="0" />
+        <Attribute Name="Mode_8" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="14024 3" Format="HDF">modes1.h5:/Function/Mode_8/0</DataItem>
+        </Attribute>
+      </Grid>
+    </Grid>
+    <Grid Name="Mode_9" GridType="Collection" CollectionType="Temporal">
+      <Grid Name="Mode_9" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="0" />
+        <Attribute Name="Mode_9" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="14024 3" Format="HDF">modes1.h5:/Function/Mode_9/0</DataItem>
+        </Attribute>
+      </Grid>
+    </Grid>
+  </Domain>
+</Xdmf>
