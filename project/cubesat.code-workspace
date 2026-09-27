@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"uri": "vscode-remote://wsl+ubuntu/mnt/c/Users/satish/FEniCS/vibration/project"
+		},
+		{
+			"uri": "vscode-remote://wsl+ubuntu/mnt/c/Users/satish/FEniCS/vibration/bar"
+		}
+	],
+	"remoteAuthority": "wsl+Ubuntu",
+	"settings": {}
+}
