@@ -25,8 +25,16 @@ print("new volumes : ",len(new_volumes))
 new_surface = gmsh.model.occ.getEntities(dim=2)
 print("new surfaces : ",len(new_surface))
 
-gmsh.option.setNumber("Mesh.MeshSizeMin",1)
-gmsh.option.setNumber("Mesh.MeshSizeMax",3)
+# gmsh.option.setNumber("Mesh.MeshSizeMin",0.5)
+# gmsh.option.setNumber("Mesh.MeshSizeMax",1)
+
+gmsh.option.setNumber("Mesh.MeshSizeFromCurvature",1)
+gmsh.option.setNumber("Mesh.MinimumElementsPerTwoPi",20)
+
+gmsh.option.setNumber("Mesh.MeshSizeMin", 0.5)
+gmsh.option.setNumber("Mesh.MeshSizeMax", 4.0)
+
+gmsh.option.setNumber("Mesh.MeshSizeExtendFromBoundary", 0)
 
 try:
     gmsh.model.mesh.generate(3)
