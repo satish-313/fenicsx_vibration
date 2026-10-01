@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"uri": "vscode-remote://wsl+ubuntu/mnt/c/Users/satish/FEniCS/vibration/gmsh_conform"
+		},
+		{
+			"uri": "vscode-remote://wsl+ubuntu/mnt/c/Users/satish/FEniCS/vibration/project"
+		}
+	],
+	"remoteAuthority": "wsl+Ubuntu",
+	"settings": {}
+}
